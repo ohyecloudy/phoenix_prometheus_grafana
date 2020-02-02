@@ -3,6 +3,14 @@ services:
   phoenix:
     build:
       context: ..
-      dockerfile: script/Dockerfile
+      dockerfile: script/Dockerfile-phoenix
     ports:
     - "4000:4000"
+  prometheus:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-prometheus
+    ports:
+    - "9090:9090"
+    depends_on:
+    - phoenix
