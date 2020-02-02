@@ -43,5 +43,8 @@ defmodule PpgWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+
+  plug PpgWeb.MetricsExporter
+
   plug PpgWeb.Router
 end
