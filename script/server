@@ -2,12 +2,7 @@
 
 set -e
 
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")"
 
-project=ggp
-
-echo "==> Building a docker image..."
-docker build -t ${project}:latest -f script/Dockerfile .
-
-echo "==> Running a docker container..."
-docker run --rm -p 4000:4000 --name ${project} ${project}:latest
+echo "==> Running a docker compose..."
+docker-compose up --build
