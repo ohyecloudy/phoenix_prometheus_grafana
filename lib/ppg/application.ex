@@ -5,8 +5,11 @@ defmodule Ppg.Application do
 
   use Application
 
+  require Prometheus.Registry
+
   def start(_type, _args) do
     Ppg.Metrics.Setup.setup()
+    Prometheus.Registry.register_collector(:prometheus_process_collector)
 
     # List all child processes to be supervised
     children = [
