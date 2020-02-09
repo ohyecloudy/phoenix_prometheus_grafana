@@ -1,0 +1,21 @@
+# -*- mode: org -*-
+# -*- coding: utf-8 -*-
+#+TITLE: phoenix prometheus grafana 테스트 프로젝트
+#+AUTHOR: Jongbin Oh
+#+EMAIL: ohyecloudy@gmail.com
+
+[[docs/image/grafana.png]]
+
+[[https://www.phoenixframework.org/][elixir web framework인 phoenix]]에 [[https://prometheus.io/][시계열(time series) 데이터 저장소인 prometheus]]와 [[https://grafana.com/][모니터링 툴인 grafana]]를 적용해보는 테스트 프로젝트.
+
+** 시작하기 (Getting Started)
+
+   #+begin_example
+     $ script/server
+   #+end_example
+
+   [[https://www.docker.com/][docker]]를 실행할 수 있는 환경에서 실행한다. 실행 후 로컬 웹서버에 접속해서 확인할 수 있다.
+
+   - http://127.0.0.1:4000 - [[https://www.phoenixframework.org/][phoenix]]
+   - http://127.0.0.1:9090 - [[https://prometheus.io/][prometheus]]
+   - http://127.0.0.1:3000 - [[https://grafana.com/][grafana]]
