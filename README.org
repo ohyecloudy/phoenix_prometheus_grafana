@@ -8,6 +8,8 @@
 
 [[https://www.phoenixframework.org/][elixir web framework인 phoenix]]에 [[https://prometheus.io/][시계열(time series) 데이터 저장소인 prometheus]]와 [[https://grafana.com/][모니터링 툴인 grafana]]를 적용해보는 테스트 프로젝트.
 
+블로그에 적은 설명 링크 - [[http://ohyecloudy.com/pnotes/archives/metrics-phoenix-prometheus-grafana/][#metrics phoenix 웹 프레임워크로 만든 프로젝트 지표를 prometheus와 grafana로 모니터링]]
+
 ** 시작하기 (Getting Started)
 
    #+begin_example
